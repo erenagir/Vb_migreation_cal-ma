@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Domain", "ClassLibrary1\Domain.vbproj", "{5ECF69EA-5311-4B46-A033-C3C599E52AA6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "API", "API\API.vbproj", "{89C378A2-3713-4D3E-9C84-E8A6D378711A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Persistance", "Persistance\Persistance.vbproj", "{63AEA92E-0B7B-424D-A6C1-CAF5BC54F2B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ECF69EA-5311-4B46-A033-C3C599E52AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ECF69EA-5311-4B46-A033-C3C599E52AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ECF69EA-5311-4B46-A033-C3C599E52AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ECF69EA-5311-4B46-A033-C3C599E52AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C378A2-3713-4D3E-9C84-E8A6D378711A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C378A2-3713-4D3E-9C84-E8A6D378711A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C378A2-3713-4D3E-9C84-E8A6D378711A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C378A2-3713-4D3E-9C84-E8A6D378711A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AEA92E-0B7B-424D-A6C1-CAF5BC54F2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AEA92E-0B7B-424D-A6C1-CAF5BC54F2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AEA92E-0B7B-424D-A6C1-CAF5BC54F2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AEA92E-0B7B-424D-A6C1-CAF5BC54F2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E142BC02-EC62-486F-AA54-391E6B5C424E}
+	EndGlobalSection
+EndGlobal
