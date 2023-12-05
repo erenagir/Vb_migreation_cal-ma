@@ -99,6 +99,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Repositories\Repository.vb" />
+    <Compile Include="UniOfWork\UnitOfWork.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202312050832276_m1.resx">
