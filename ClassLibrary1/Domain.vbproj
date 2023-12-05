@@ -65,8 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\BaseEntity.vb" />
-    <Compile Include="Entities\Person.vb" />
-    <Compile Include="Entities\PersonDetail.vb" />
+    <Compile Include="Entities\Category.vb" />
+    <Compile Include="Entities\Product.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

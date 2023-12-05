@@ -77,12 +77,12 @@
   <ItemGroup>
     <Compile Include="Context\DenemeContext.vb" />
     <Compile Include="Mapping\BaseEntityMapping.vb" />
-    <Compile Include="Mapping\PersonDetailMapping.vb" />
-    <Compile Include="Mapping\PersonMapping.vb" />
-    <Compile Include="Migrations\202312041450179_m2.designer.vb">
-      <DependentUpon>202312041450179_m2.vb</DependentUpon>
+    <Compile Include="Mapping\CategoryMapping.vb" />
+    <Compile Include="Mapping\ProductMapping.vb" />
+    <Compile Include="Migrations\202312050832276_m1.designer.vb">
+      <DependentUpon>202312050832276_m1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312041450179_m2.vb" />
+    <Compile Include="Migrations\202312050832276_m1.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -101,8 +101,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202312041450179_m2.resx">
-      <DependentUpon>202312041450179_m2.vb</DependentUpon>
+    <EmbeddedResource Include="Migrations\202312050832276_m1.resx">
+      <DependentUpon>202312050832276_m1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

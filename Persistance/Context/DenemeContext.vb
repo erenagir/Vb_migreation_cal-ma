@@ -7,8 +7,8 @@ Public Class DenemeContext
 
 
 
-    Public Property Persons As DbSet(Of Person)
-    Public Property PersonDetails As DbSet(Of PersonDetail)
+    Public Property Products As DbSet(Of Product)
+    Public Property Categories As DbSet(Of Category)
 
 
     Public Sub New()
@@ -16,8 +16,8 @@ Public Class DenemeContext
     End Sub
     Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
         MyBase.OnModelCreating(modelBuilder)
-        modelBuilder.Configurations.Add(New PersonMapping)
-        modelBuilder.Configurations.Add(New PersonDetailMapping)
+        modelBuilder.Configurations.Add(New CategoryMapping)
+        modelBuilder.Configurations.Add(New ProductMapping)
 
     End Sub
 
