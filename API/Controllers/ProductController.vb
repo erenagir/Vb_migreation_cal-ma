@@ -26,9 +26,11 @@ Public Class ProductController
     End Function
 
     ' POST api/<controller>
-    Public Sub PostValue(<FromBody()> ByVal value As String)
+    Public Async Function PostValue(<FromBody> ByVal value As Product) As Task(Of Boolean)
+        Dim Response = Await _service.Add(value)
 
-    End Sub
+        Return Response
+    End Function
 
     ' PUT api/<controller>/5
     Public Sub PutValue(ByVal id As Integer, <FromBody()> ByVal value As String)

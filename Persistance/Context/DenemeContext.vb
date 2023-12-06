@@ -10,7 +10,7 @@ Public Class DenemeContext
 
 
     Public Sub New()
-        MyBase.New("Server=.;Database=denemedb;Trusted_Connection=True;TrustServerCertificate=True")
+        MyBase.New("Server=.\SQLEXPRESS;Database=denemedb;Trusted_Connection=True;TrustServerCertificate=True")
     End Sub
     Public Property Products As DbSet(Of Product)
     Public Property Categories As DbSet(Of Category)

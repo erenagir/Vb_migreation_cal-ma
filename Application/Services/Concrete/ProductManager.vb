@@ -20,7 +20,13 @@ Public Class ProductManager
 
     End Function
 
-    Public Function Add(entity As Product) As Object Implements IGenericService(Of Product).Add
-        Throw New NotImplementedException()
+    Public Async Function Add(entity As Product) As Task(Of Boolean) Implements IGenericService(Of Product).Add
+        _uow.GetRepository(Of Product)().Add(entity)
+
+        Dim Result = Await _uow.CommitAsync()
+
+        Return Result
+
     End Function
 End Class
+
