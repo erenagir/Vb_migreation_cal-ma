@@ -12,8 +12,10 @@ Public Class ProductManager
     Public Async Function GetAllAsync() As Task(Of List(Of Product)) Implements IGenericService(Of Product).GetAllAsync
 
         Dim Product = Await _uow.GetRepository(Of Product)().GetAllAsync()
-        Product.ToList()
-        Return Product
+
+        Dim result = Product.ToList()
+
+        Return result
 
 
     End Function

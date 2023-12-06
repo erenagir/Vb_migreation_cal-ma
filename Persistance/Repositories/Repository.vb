@@ -7,10 +7,10 @@ Imports ClassLibrary1
 Public Class Repository(Of T As BaseEntity)
     Implements IRepository(Of T)
 
-    Private ReadOnly _context As DbContext
+    Private ReadOnly _context As DenemeContext
     Private ReadOnly _dbSet As DbSet(Of T)
 
-    Public Sub New(context As DbContext)
+    Public Sub New(context As DenemeContext)
         _context = context
         _dbSet = _context.Set(Of T)()
     End Sub
@@ -27,6 +27,23 @@ Public Class Repository(Of T As BaseEntity)
         _dbSet.AddOrUpdate(entity)
     End Sub
 
+    'Public Async Function GetAllAsync() As Task(Of List(Of T)) Implements IRepository(Of T).GetAllAsync
+
+    '    Using ctx = New DenemeContext()
+    '        Dim dbSet = ctx.Set(Of T)
+    '        Dim list = Await dbSet.ToListAsync()
+    '        Return list
+    '    End Using
+
+    '    'Dim query As IQueryable(Of T) = _dbSet
+    '    'If includeColumns.Any() Then
+    '    '    For Each includecolumn In includeColumns
+    '    '        query = _dbSet.Include(includecolumn)
+    '    '    Next
+    '    'End If
+    '    'Return Task.FromResult(query).Result
+
+    'End Function
     Public Async Function GetAllAsync(ParamArray includeColumns() As String) As Task(Of IQueryable(Of T)) Implements IRepository(Of T).GetAllAsync
 
         Dim query As IQueryable(Of T) = _dbSet

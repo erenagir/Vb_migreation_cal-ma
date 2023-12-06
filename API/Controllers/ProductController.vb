@@ -1,4 +1,5 @@
 ﻿Imports System.Net
+Imports System.Threading.Tasks
 Imports System.Web.Http
 Imports Application
 Imports ClassLibrary1
@@ -11,11 +12,11 @@ Public Class ProductController
         _service = service
     End Sub
     ' GET api/<controller>
-    Public Async Function GetValues() As Threading.Tasks.Task(Of List(Of Product))
+    Public Async Function GetValues() As Task(Of List(Of Product))
+
         Dim result = Await _service.GetAllAsync()
 
         Return result
-
 
     End Function
 

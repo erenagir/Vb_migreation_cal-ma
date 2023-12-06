@@ -3,7 +3,7 @@ Imports System.Data.Entity.Migrations
 Imports Microsoft.VisualBasic
 
 Namespace Migrations
-    Public Partial Class m1
+    Public Partial Class m0
         Inherits DbMigration
     
         Public Overrides Sub Up()

@@ -17,7 +17,7 @@ Public Module WebApiConfig
         container.RegisterType(Of IUnitOfWork, UnitOfWork)
         container.RegisterType(GetType(IRepository(Of)), GetType(Repository(Of)))
         container.RegisterType(Of IProductService(Of Product), ProductManager)
-        container.RegisterType(Of DbContext, DenemeContext)()
+        container.RegisterType(Of DenemeContext, DenemeContext)()
 
 
 

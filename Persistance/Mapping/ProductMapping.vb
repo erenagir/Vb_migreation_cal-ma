@@ -13,11 +13,19 @@ Public Class ProductMapping
         builder.ToTable("PRODUCT")
 
 
-        builder.Property(Function(e) e.Name).HasColumnName("NAME").HasColumnType("nvarchar(50)")
-        builder.Property(Function(e) e.CategoryId).HasColumnName("CATEGORY_ID")
-        builder.Property(Function(e) e.Stock).HasColumnName("STOCK")
-        builder.Property(Function(e) e.Detail).HasColumnName("DETAIL").HasColumnType("nvarchar(100)")
-        builder.HasOptional(Function(x) x.Category).WithMany(Function(x) x.Products).HasForeignKey(Function(x) x.CategoryId)
+        builder.Property(Function(e) e.Name) _
+            .HasColumnName("NAMEE") _
+            .HasColumnType("nvarchar(50)")
+        builder.Property(Function(e) e.CategoryId) _
+            .HasColumnName("CATEGORY_ID")
+        builder.Property(Function(e) e.Stock) _
+               .HasColumnName("STOCK")
+        builder.Property(Function(e) e.Detail) _
+            .HasColumnName("DETAIL") _
+            .HasColumnType("nvarchar(100)")
+        builder.HasOptional(Function(x) x.Category) _
+            .WithMany(Function(x) x.Products) _
+            .HasForeignKey(Function(x) x.CategoryId)
 
 
     End Sub

@@ -7,6 +7,8 @@ Public Class CategoryMapping
         builder.ToTable("CATEGORY")
 
 
-        builder.Property(Function(e) e.Name).HasColumnName("NAME").HasColumnType("nvarchar(150)")
+        builder.Property(Function(e) e.Name) _
+            .HasColumnName("NAMEE") _
+            .HasColumnType("nvarchar(150)")
     End Sub
 End Class

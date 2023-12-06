@@ -79,10 +79,10 @@
     <Compile Include="Mapping\BaseEntityMapping.vb" />
     <Compile Include="Mapping\CategoryMapping.vb" />
     <Compile Include="Mapping\ProductMapping.vb" />
-    <Compile Include="Migrations\202312050832276_m1.designer.vb">
-      <DependentUpon>202312050832276_m1.vb</DependentUpon>
+    <Compile Include="Migrations\202312061206279_m0.designer.vb">
+      <DependentUpon>202312061206279_m0.vb</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312050832276_m1.vb" />
+    <Compile Include="Migrations\202312061206279_m0.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -103,8 +103,8 @@
     <Compile Include="UniOfWork\UnitOfWork.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202312050832276_m1.resx">
-      <DependentUpon>202312050832276_m1.vb</DependentUpon>
+    <EmbeddedResource Include="Migrations\202312061206279_m0.resx">
+      <DependentUpon>202312061206279_m0.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
