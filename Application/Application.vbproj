@@ -107,6 +107,10 @@
       <Project>{5ECF69EA-5311-4B46-A033-C3C599E52AA6}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Persistance\Persistance.vbproj">
+      <Project>{63AEA92E-0B7B-424D-A6C1-CAF5BC54F2B3}</Project>
+      <Name>Persistance</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

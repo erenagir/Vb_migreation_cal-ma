@@ -1,15 +1,20 @@
 ﻿Imports ClassLibrary1
+Imports Persistance
 
 Public Class ProductManager
     Implements IProductService(Of Product)
 
-    Private ReadOnly _uow As IUnitOfWork
+    Private ReadOnly _uow As UnitOfWork
     Sub New(uow As IUnitOfWork)
         _uow = uow
     End Sub
 
     Public Async Function GetAllAsync() As Task(Of List(Of Product)) Implements IGenericService(Of Product).GetAllAsync
-        Return Await _uow.GetRepository(Of Product)().GetAllAsync()
+
+        Dim Product = Await _uow.GetRepository(Of Product)().GetAllAsync()
+        Product.ToList()
+        Return Product
+
 
     End Function
 

@@ -1,5 +1,5 @@
 ﻿Public Interface IUnitOfWork
-    Inherits IDisposable
+
 
 
     Function GetRepository(Of T As BaseEntity)() As IRepository(Of T)

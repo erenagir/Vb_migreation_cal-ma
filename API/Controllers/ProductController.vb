@@ -1,12 +1,22 @@
 ﻿Imports System.Net
 Imports System.Web.Http
+Imports Application
+Imports ClassLibrary1
 
 Public Class ProductController
     Inherits ApiController
+    Private ReadOnly _service As ProductManager
 
+    Public Sub New(service As IProductService(Of Product))
+        _service = service
+    End Sub
     ' GET api/<controller>
-    Public Function GetValues() As IEnumerable(Of String)
-        Return New String() {"value1", "value2"}
+    Public Async Function GetValues() As Threading.Tasks.Task(Of List(Of Product))
+        Dim result = Await _service.GetAllAsync()
+
+        Return result
+
+
     End Function
 
     ' GET api/<controller>/5
