@@ -1,6 +1,4 @@
-﻿Imports System.Data.Entity
-Imports System.Web.Http
-Imports System.Web.UI.WebControls.Expressions
+﻿Imports System.Web.Http
 Imports Application
 Imports ClassLibrary1
 Imports Persistance
@@ -30,6 +28,8 @@ Public Module WebApiConfig
 
         ' Web API routes
         config.MapHttpAttributeRoutes()
+        SwaggerConfig.Register(config)
+
 
         config.Routes.MapHttpRoute(
             name:="DefaultApi",

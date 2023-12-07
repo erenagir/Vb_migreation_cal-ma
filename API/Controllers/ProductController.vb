@@ -12,6 +12,7 @@ Public Class ProductController
         _service = service
     End Sub
     ' GET api/<controller>
+    <HttpGet, Route("123")>
     Public Async Function GetValues() As Task(Of List(Of Product))
 
         Dim result = Await _service.GetAllAsync()
@@ -21,6 +22,7 @@ Public Class ProductController
     End Function
 
     ' GET api/<controller>/5
+    <HttpGet, Route("product/GetbyId/{id}")>
     Public Function GetValue(ByVal id As Integer) As String
         Return "value"
     End Function
